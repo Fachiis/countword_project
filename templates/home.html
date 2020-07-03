@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <a href="{% url 'about' %}">about</a>
+    <h1>This is working</h1>
+
+    <form action="{% url 'count' %}">
+        <textarea cols="50" rows="8" name='fulltext'></textarea>
+        <br />
+        <p>
+            <input type='submit' value='Count' />
+        </p>
+    </form>
+
+</body>
+
+</html>
